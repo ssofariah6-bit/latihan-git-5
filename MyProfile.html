@@ -2,59 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Account Management</title>
+  <title>Biodata Profil</title>
 </head>
 <body>
+    <table border="1" style="width:50%">
+        <tr>
+            <th>Account Management</th>
+            <th>Profile Information</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="1.png" alt="Foto Profil" width="50%">
+                <form action="http://localhost:3000/ipload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="gambar" id="gambar" accept="image/*"><br><br>
+                    <input type="submit" value="Upload"> <br><br>
 
-  <h2>Account Management</h2>
+                    <label> Old Password </label>
+                    <input type="text" id="password"><br><br>
+                    <label> New Password </label>
+                    <input type="text" id="password"><br><br>
 
-  <h3>Profile Photo</h3>
-  <img src="1.png" alt="Profile Photo" width="150"><br>
-  <input type="file" accept="image/*"><br><br>
-  <h3>Change Password</h3>
-  <label>Old Password:</label><br>
-  <input type="password"><br><br>
+                    <button type="submit">Change Password</button>
+                </form>
+            </td>
+            <td>
+                <label> Username </label>
+                <input type="text" ide="name"><br><br>
+                <label> Nickname </label>
+                <input type="text" ide="name"><br><br>
+                <label> Last Name </label>
+                <input type="text" ide="name"><br><br>
 
-  <label>New Password:</label><br>
-  <input type="password"><br><br>
+                <h3>Contact Info</h3>
+                <label>Email(required)</label>
+                <input type="text" id="email"><br><br>
+                <label>Website</label>
+                <input type="text" id="website"><br><br>
 
-  <button>Change Password</button><br><br>
+                <h3>About the User</h3>
+                <label for="deskripsi">Biographical Info</label><br>
+                <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" placeholder="Tulis deskripsi di sini...">
+                </textarea><br>
+            </td>
+            <td>
+                <label>First Name</label>
+                <input type="text" id="name"><br><br>
+                <label>Role</label>
+                <select name="peran" id="peran">
+                    <option value="subscribe">Subscriber</option>
+                    <option value="author">Author</option>
+                    <option value="editor">Editor</option>
+                    <option value="administrator">Administrator</option><br><br>
+                </select>
+                <br><br>
+                <label>Display Name Publicly as</label>
+                <input type="text" id="name"><br><br><br><br>
 
+                <label>WhatsApp</label>
+                <input type="number" id="number">
+                <br><br>
 
-  <h3>Profile Information</h3>
-  <label>Username:</label><br>
-  <input type="text"><br><br>
+                <label>Telegram</label>
+                <input type="text" id="account"><br><br>
+            </td>
+        </tr>
+    </table>
 
-  <label>First Name:</label><br>
-  <input type="text"><br><br>
-
-  <label>Last Name:</label><br>
-  <input type="text"><br><br>
-
-  <label>Nickname:</label><br>
-  <input type="text"><br><br>
-
-  <label>Display Name Publicly as</label><br>
-  <input type="text"><br><br>
-
-  <label>Role</label>
-  <select name="role" id="role">
-    <option value="Subscriber">Subscriber</option>
-    <option value="none">Tidak ada</option>
-    </select><br><br>
-
-  <label>Whatsapp:</label><br>
-  <input type="text"><br><br>
-
-  <label>Telegram:</label><br>
-  <input type="text"><br><br>
-
-  <label>Website:</label><br>
-  <input type="text"><br><br>
-
-  <h3>About the User</h3>
-  <h5>Biographical Info</h5>
-  <textarea rows="5" cols="40"></textarea>
 
 </body>
 </html>
